@@ -11,16 +11,8 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.amber,
         appBar: AppBar(
-          backgroundColor: Colors.amber,
-          title: const Text(
-            "GAS",
-            style: TextStyle(
-                color: Colors.black,
-                fontStyle: FontStyle.italic,
-                fontWeight: FontWeight.w800,
-                fontSize: 30),
-          ),
-        ),
+            backgroundColor: Colors.amber,
+            leading: Image.asset("assets/logo.png")),
         body: Center(
             child: Container(
                 color: Colors.white,
