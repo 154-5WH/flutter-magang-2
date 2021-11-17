@@ -43,10 +43,17 @@ Widget bglogin() {
               top: 100,
             ),
             child: TextFormField(
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return 'Please enter some text';
+                }
+                ;
+                return null;
+              },
               keyboardType: TextInputType.phone,
               decoration: InputDecoration(
-                hintText: "contoh: 0812xxxxxxx",
-                labelText: "Nomor Telp",
+                hintText: "contoh: 812xxxxxxx",
+                labelText: "Nomor Seluler",
                 // icon: const Icon(Icons.phone),
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5.0)),
