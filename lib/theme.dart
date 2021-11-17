@@ -40,7 +40,7 @@ Widget bglogin() {
             padding: const EdgeInsets.only(
               right: 20,
               left: 20,
-              top: 185,
+              top: 100,
             ),
             child: TextFormField(
               keyboardType: TextInputType.phone,
@@ -57,12 +57,13 @@ Widget bglogin() {
             padding: const EdgeInsets.only(
               right: 20,
               left: 20,
-              top: 100,
+              top: 185,
             ),
             child: TextFormField(
+              obscureText: true,
               decoration: InputDecoration(
-                hintText: "masukan nama lengkap anda",
-                labelText: "Nama Lengkap",
+                hintText: "********",
+                labelText: "Password",
                 // icon: const Icon(Icons.people),
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5.0)),
