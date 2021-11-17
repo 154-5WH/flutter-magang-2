@@ -1,28 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_magang2/theme.dart';
+import 'package:progress_state_button/progress_button.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  MyApp({Key? key}) : super(key: key);
+  TextEditingController controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.amber,
-        appBar: AppBar(
-            backgroundColor: Colors.amber,
-            leading: Image.asset("assets/logo.png")),
-        body: Center(
-            child: Container(
-                color: Colors.white,
-                width: 150,
-                height: 50,
-                child: const Text(
-                  "calon login page aplikasi gas",
-                  maxLines: 2,
-                ))),
-      ),
-    );
+        home: Scaffold(
+      backgroundColor: Colors.amber,
+      appBar: widgetAppBar(),
+      body: bglogin(),
+
+      // body: Center(
+      // child:
+      //Image.asset(
+      // "assets/Group 202.png",
+      // height: 815,
+      // width: 375,
+      // alignment: Alignment.topCenter,
+      // ),
+      // ),
+    ));
   }
 }
