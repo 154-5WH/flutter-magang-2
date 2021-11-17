@@ -4,6 +4,7 @@ import 'package:progress_state_button/progress_button.dart';
 
 void main() => runApp(MyApp());
 
+// ignore: must_be_immutable
 class MyApp extends StatelessWidget {
   MyApp({Key? key}) : super(key: key);
   TextEditingController controller = TextEditingController();
