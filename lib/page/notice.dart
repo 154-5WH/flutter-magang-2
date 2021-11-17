@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_magang2/theme.dart';
+import 'package:flutter_magang2/utils/theme.dart';
 
 void main() => runApp(const notice());
 

@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_magang2/theme.dart';
+import 'package:flutter_magang2/utils/theme.dart';
+import 'package:flutter_magang2/utils/loginutils.dart';
 import 'package:progress_state_button/progress_button.dart';
 
 void main() => runApp(MyApp());
 
 // ignore: must_be_immutable
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   MyApp({Key? key}) : super(key: key);
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   TextEditingController controller = TextEditingController();
 
   @override
