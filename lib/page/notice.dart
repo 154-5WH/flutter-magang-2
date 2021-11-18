@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_magang2/page/masuk.dart';
+import 'package:flutter_magang2/page/sudah_ada.dart';
 import 'package:flutter_magang2/utils/theme.dart';
 
 class Notice extends StatelessWidget {
@@ -127,7 +128,12 @@ class Notice extends StatelessWidget {
                   height: 48,
                   width: 128,
                   child: ElevatedButton.icon(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const adapak()));
+                    },
                     icon: const Icon(
                       Icons.login_rounded,
                       color: Colors.indigo,
@@ -153,7 +159,9 @@ class Notice extends StatelessWidget {
             ),
           ),
           const Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: EdgeInsets.only(
+              top: 15,
+            ),
             child: Text(
               "Paket multi devices ?",
               style: TextStyle(
@@ -162,12 +170,17 @@ class Notice extends StatelessWidget {
               ),
             ),
           ),
-          const Text(
-            "Lihat paket",
-            style: TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.w300,
-              color: Colors.indigo,
+          const Padding(
+            padding: EdgeInsets.only(
+              top: 15,
+            ),
+            child: Text(
+              "Lihat paket",
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w300,
+                color: Colors.indigo,
+              ),
             ),
           )
         ],
