@@ -13,18 +13,16 @@ class Notice extends StatelessWidget {
       appBar: widgetAppBar(),
       body: Column(
         children: [
-          Container(
-            child: Padding(
-              padding: const EdgeInsets.only(
-                top: 74,
-                right: 75,
-                left: 80,
-              ),
-              child: Image.asset(
-                "assets/notice.png",
-                height: 228,
-                width: 228,
-              ),
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 74,
+              right: 75,
+              left: 80,
+            ),
+            child: Image.asset(
+              "assets/notice.png",
+              height: 228,
+              width: 228,
             ),
           ),
           const Center(
