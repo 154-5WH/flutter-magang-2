@@ -28,14 +28,5 @@ AppBar widgetAppBar() {
       height: 42,
       width: 105,
     ),
-    actions: <Widget>[
-      IconButton(
-        icon: const Icon(
-          Icons.fingerprint,
-          color: Colors.black,
-        ),
-        onPressed: () {},
-      ),
-    ],
   );
 }
