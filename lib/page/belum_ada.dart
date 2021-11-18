@@ -3,10 +3,10 @@ import 'package:flutter_magang2/page/succes.dart';
 import 'package:flutter_magang2/page/sudah_ada.dart';
 import 'package:flutter_magang2/utils/theme.dart';
 
-void main() => runApp(const blmada());
+void main() => runApp(const Blmada());
 
-class blmada extends StatelessWidget {
-  const blmada({Key? key}) : super(key: key);
+class Blmada extends StatelessWidget {
+  const Blmada({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -158,7 +158,7 @@ class blmada extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const berhasilpak()));
+                              builder: (context) => const Berhasilpak()));
                     },
                     icon: const Icon(
                       Icons.send_outlined,

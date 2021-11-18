@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_magang2/page/belum_ada.dart';
 import 'package:flutter_magang2/page/failed.dart';
 import 'package:flutter_magang2/utils/theme.dart';
 
-void main() => runApp(const berhasilpak());
+void main() => runApp(const Berhasilpak());
 
-class berhasilpak extends StatelessWidget {
-  const berhasilpak({Key? key}) : super(key: key);
+class Berhasilpak extends StatelessWidget {
+  const Berhasilpak({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -80,7 +79,7 @@ class berhasilpak extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const gagal()));
+                                builder: (context) => const Gagal()));
                       },
                       icon: const Icon(
                         Icons.login_rounded,

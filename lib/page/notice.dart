@@ -100,7 +100,7 @@ class Notice extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const masukpak()));
+                              builder: (context) => const Masukpak()));
                     },
                     icon: const Icon(
                       Icons.arrow_back,

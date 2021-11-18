@@ -2,17 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_magang2/utils/theme.dart';
 import 'package:flutter_magang2/utils/loginutils.dart';
 
-void main() => runApp(const masukpak());
+void main() => runApp(const Masukpak());
 
-// ignore: must_be_immutable
-class masukpak extends StatefulWidget {
-  const masukpak({Key? key}) : super(key: key);
+class Masukpak extends StatefulWidget {
+  const Masukpak({Key? key}) : super(key: key);
 
   @override
-  State<masukpak> createState() => _masukpakState();
+  State<Masukpak> createState() => _MasukpakState();
 }
 
-class _masukpakState extends State<masukpak> {
+class _MasukpakState extends State<Masukpak> {
   TextEditingController controller = TextEditingController();
 
   @override

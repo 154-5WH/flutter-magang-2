@@ -156,7 +156,7 @@ class adapak extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const blmada()));
+                              builder: (context) => const Blmada()));
                     },
                     icon: const Icon(
                       Icons.send_outlined,

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_magang2/page/succes.dart';
 import 'package:flutter_magang2/utils/theme.dart';
 
-void main() => runApp(const gagal());
+void main() => runApp(const Gagal());
 
-class gagal extends StatelessWidget {
-  const gagal({Key? key}) : super(key: key);
+class Gagal extends StatelessWidget {
+  const Gagal({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +79,7 @@ class gagal extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const berhasilpak()));
+                                builder: (context) => const Berhasilpak()));
                       },
                       icon: const Icon(
                         Icons.arrow_back,
@@ -108,14 +108,14 @@ class gagal extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const berhasilpak()));
+                                builder: (context) => const Berhasilpak()));
                       },
                       icon: const Icon(
                         Icons.restore_rounded,
                         color: Colors.indigo,
                       ),
                       label: const Text(
-                        "Kirim",
+                        "Coba lagi",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
