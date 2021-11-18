@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_magang2/page/masuk.dart';
+import 'package:flutter_magang2/page/belum_ada.dart';
+import 'package:flutter_magang2/page/notice.dart';
 import 'package:flutter_magang2/utils/theme.dart';
 
 class adapak extends StatelessWidget {
@@ -126,7 +127,7 @@ class adapak extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const masukpak()));
+                              builder: (context) => const Notice()));
                     },
                     icon: const Icon(
                       Icons.arrow_back,
@@ -155,14 +156,14 @@ class adapak extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const adapak()));
+                              builder: (context) => const blmada()));
                     },
                     icon: const Icon(
-                      Icons.login_rounded,
+                      Icons.send_outlined,
                       color: Colors.indigo,
                     ),
                     label: const Text(
-                      "Lanjut",
+                      "Kirim",
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
