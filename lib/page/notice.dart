@@ -26,7 +26,6 @@ class Notice extends StatelessWidget {
                 width: 228,
               ),
             ),
-            padding: const EdgeInsets.only(),
           ),
           const Center(
             child: Padding(
