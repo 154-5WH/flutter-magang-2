@@ -3,8 +3,8 @@ import 'package:flutter_magang2/page/belum_ada.dart';
 import 'package:flutter_magang2/page/notice.dart';
 import 'package:flutter_magang2/utils/theme.dart';
 
-class adapak extends StatelessWidget {
-  const adapak({Key? key}) : super(key: key);
+class Adapak extends StatelessWidget {
+  const Adapak({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

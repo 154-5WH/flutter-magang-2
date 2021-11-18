@@ -129,7 +129,7 @@ class Notice extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const adapak()));
+                              builder: (context) => const Adapak()));
                     },
                     icon: const Icon(
                       Icons.login_rounded,
