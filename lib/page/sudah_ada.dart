@@ -9,6 +9,7 @@ class Adapak extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.amber,
       appBar: widgetAppBar(),
       body: Column(
