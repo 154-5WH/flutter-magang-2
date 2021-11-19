@@ -36,7 +36,7 @@ class Gagal extends StatelessWidget {
                 bottom: 10,
               ),
               child: Text(
-                "Yeey !",
+                "Maaf !",
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.normal,

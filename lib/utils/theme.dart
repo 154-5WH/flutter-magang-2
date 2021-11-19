@@ -26,7 +26,7 @@ AppBar widgetAppBar() {
     backgroundColor: Colors.amber,
     title: Image.asset(
       "assets/logo.png",
-      height: 42,
+      height: 45,
       width: 105,
     ),
   );
