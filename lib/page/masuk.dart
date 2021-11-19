@@ -16,12 +16,15 @@ class _MasukpakState extends State<Masukpak> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        theme: birunyacinta(),
-        home: Scaffold(
-          backgroundColor: Colors.amber,
-          appBar: widgetAppBar(),
-          body: const LoginPageAwal(),
-        ));
+    return AspectRatio(
+        aspectRatio: 100 / 100,
+        child: MaterialApp(
+            theme: birunyacinta(),
+            home: Scaffold(
+              resizeToAvoidBottomInset: false,
+              backgroundColor: Colors.amber,
+              appBar: widgetAppBar(),
+              body: const LoginPageAwal(),
+            )));
   }
 }
