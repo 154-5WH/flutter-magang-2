@@ -66,14 +66,15 @@ class Adapak extends StatelessWidget {
               top: 30,
             ),
             child: TextFormField(
+                keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
-              hintText: "Masukan Email Anda",
-              labelText: "Verifikasi Email Anda",
+                  hintText: "Masukan Email Anda",
+                  labelText: "Verifikasi Email Anda",
 
-              // icon: const Icon(Icons.people),
-              border:
-                  OutlineInputBorder(borderRadius: BorderRadius.circular(5.0)),
-            )),
+                  // icon: const Icon(Icons.people),
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5.0)),
+                )),
           ),
           const Padding(
             padding: EdgeInsets.only(
