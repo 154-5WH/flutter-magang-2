@@ -21,6 +21,7 @@ ThemeData birunyacinta() {
 
 AppBar widgetAppBar() {
   return AppBar(
+    automaticallyImplyLeading: false,
     elevation: 0,
     backgroundColor: Colors.amber,
     title: Image.asset(
