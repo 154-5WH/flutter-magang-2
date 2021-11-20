@@ -69,6 +69,8 @@ class Adapak extends StatelessWidget {
             child: TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
+                  fillColor: Colors.white,
+                  filled: true,
                   hintText: "Masukan Email Anda",
                   labelText: "Verifikasi Email Anda",
 

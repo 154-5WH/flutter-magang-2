@@ -70,6 +70,8 @@ class Blmada extends StatelessWidget {
             ),
             child: TextFormField(
                 decoration: InputDecoration(
+              fillColor: Colors.white,
+              filled: true,
               hintText: "Masukan nama Anda",
               labelText: "Verifikasi nama Anda",
 
