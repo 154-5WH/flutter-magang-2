@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_magang2/page/notice.dart';
+import 'package:intl_phone_field/intl_phone_field.dart';
 
 class LoginPageAwal extends StatefulWidget {
   const LoginPageAwal({Key? key}) : super(key: key);
@@ -11,6 +12,18 @@ class LoginPageAwal extends StatefulWidget {
 class _LoginPageAwalState extends State<LoginPageAwal> {
   @override
   Widget build(BuildContext context) {
+    var kodenegara = IntlPhoneField(
+      decoration: const InputDecoration(
+        labelText: 'Phone Number',
+        border: OutlineInputBorder(
+          borderSide: BorderSide(),
+        ),
+      ),
+      initialCountryCode: 'IN',
+      onChanged: (phone) {
+        print(phone.completeNumber);
+      },
+    );
     return Padding(
         padding: const EdgeInsets.only(
           top: 60.0,
@@ -34,13 +47,13 @@ class _LoginPageAwalState extends State<LoginPageAwal> {
                 ),
                 child: TextFormField(
                   validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Please enter some text';
+                    if (value!.isEmpty) {
+                      return 'ppp';
                     }
-                    return null;
                   },
                   keyboardType: TextInputType.phone,
                   decoration: InputDecoration(
+                    prefixIcon: kodenegara,
                     hintText: "contoh: 812xxxxxxx",
                     labelText: "Nomor Seluler",
                     // icon: const Icon(Icons.phone),
